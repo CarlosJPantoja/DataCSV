@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "Microsoft.Chart.Controls/3.5.30729": {
+        "type": "package",
+        "compile": {
+          "lib/net35/System.Web.DataVisualization.Design.dll": {},
+          "lib/net35/System.Web.DataVisualization.dll": {},
+          "lib/net35/System.Windows.Forms.DataVisualization.Design.dll": {},
+          "lib/net35/System.Windows.Forms.DataVisualization.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Web.DataVisualization.Design.dll": {},
+          "lib/net35/System.Web.DataVisualization.dll": {},
+          "lib/net35/System.Windows.Forms.DataVisualization.Design.dll": {},
+          "lib/net35/System.Windows.Forms.DataVisualization.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.Chart.Controls/3.5.30729": {
+      "sha512": "aiVXbeJVSKTNIbRi4DPkTQxzWjX+/PKc41TPkBt8vL1BPtjZvktDu5RGK5os3OteP5gMwfev7tE6V8r5IuKCGA==",
+      "type": "package",
+      "path": "microsoft.chart.controls/3.5.30729",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Supplemental Redist License_English.docx",
+        "lib/net35/System.Web.DataVisualization.Design.dll",
+        "lib/net35/System.Web.DataVisualization.dll",
+        "lib/net35/System.Windows.Forms.DataVisualization.Design.dll",
+        "lib/net35/System.Windows.Forms.DataVisualization.dll",
+        "microsoft.chart.controls.3.5.30729.nupkg.sha512",
+        "microsoft.chart.controls.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "Microsoft.Chart.Controls >= 3.5.30729"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Carlos\\.nuget\\packages\\": {}
@@ -45,6 +80,12 @@
     "frameworks": {
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "Microsoft.Chart.Controls": {
+            "target": "Package",
+            "version": "[3.5.30729, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -66,5 +107,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.Chart.Controls 3.5.30729\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net5.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.Chart.Controls",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
 }

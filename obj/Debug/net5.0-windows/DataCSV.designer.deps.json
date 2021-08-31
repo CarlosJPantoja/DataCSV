@@ -5,7 +5,36 @@
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v5.0": {}
+    ".NETCoreApp,Version=v5.0": {
+      "Microsoft.Chart.Controls/3.5.30729": {
+        "runtime": {
+          "lib/net35/System.Web.DataVisualization.Design.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.30729.116"
+          },
+          "lib/net35/System.Web.DataVisualization.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.30729.116"
+          },
+          "lib/net35/System.Windows.Forms.DataVisualization.Design.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.30729.116"
+          },
+          "lib/net35/System.Windows.Forms.DataVisualization.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.30729.116"
+          }
+        }
+      }
+    }
   },
-  "libraries": {}
+  "libraries": {
+    "Microsoft.Chart.Controls/3.5.30729": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aiVXbeJVSKTNIbRi4DPkTQxzWjX+/PKc41TPkBt8vL1BPtjZvktDu5RGK5os3OteP5gMwfev7tE6V8r5IuKCGA==",
+      "path": "microsoft.chart.controls/3.5.30729",
+      "hashPath": "microsoft.chart.controls.3.5.30729.nupkg.sha512"
+    }
+  }
 }
