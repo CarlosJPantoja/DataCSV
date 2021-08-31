@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Windows.Forms.DataVisualization.Charting.Chart;
 
 namespace DataCSV
 {
@@ -70,7 +71,6 @@ namespace DataCSV
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label1.Text = comboBox1.Text;
             dataGridView1.DataSource = null;
             DataTable dt = new DataTable();
             string[] lines = data;
@@ -88,7 +88,6 @@ namespace DataCSV
                 {
                     string[] dtword = lines[i].Split(',');
                     if (dtword[3].Substring(0,1).Equals(comboBox1.Text)) {
-                        label1.Text = "Yeahhhhh";
                         DataRow dr = dt.NewRow();
                         int index = 0;
                         foreach (string word in headers)
