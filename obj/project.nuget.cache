@@ -1,21 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HukN5tIx2SiA5OpD9Wl4xZbBJzPTBJYn09gZhM/d0kHmNJtpyHZirw8308PRjhFiIl/IZNTjS+iVq65yRi0SCw==",
+  "dgSpecHash": "K7DbOPm1gezjHR2eUGhHup9RzVdrmPlB0p5ctb1nofbswHQ9dniBaEGUwUCekyjt5mtmGcgE4W0fzAvXOvUGAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Carlos\\source\\repos\\DataCSV\\DataCSV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos\\.nuget\\packages\\microsoft.chart.controls\\3.5.30729\\microsoft.chart.controls.3.5.30729.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"Microsoft.Chart.Controls 3.5.30729\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net5.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "Microsoft.Chart.Controls",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
